@@ -32,3 +32,28 @@ This project better define server configurations, repairs and installations in v
 ```
 python3 -m twine upload dist/*
 ```
+
+
+### Upload New Version
+
+Delete all compiled structure before changes
+
+
+> #### Note ToDo!
+>
+> - Create auto script dev to windows, linux & macos
+>
+>  *Urgent*
+>
+
+<br>
+
+Run setup file again:
+
+`python .\setup.py sdist bdist_wheel`
+
+<br>
+
+Upload dist folder:
+
+`python3 -m twine upload --skip-existing dist/*`
