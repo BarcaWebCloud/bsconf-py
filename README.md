@@ -1,4 +1,4 @@
-### [bwc-bsconf 0.1.0](https://pypi.org/project/bwc-bsconf/0.1.0/) 
+### [bwc-bsconf 0.1.1](https://pypi.org/project/bwc-bsconf/0.1.1/) 
 
 This project better define server configurations, repairs and installations in various operating environments.
 
