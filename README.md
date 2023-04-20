@@ -1,34 +1,53 @@
-### Pip [bwc-bsconf 0.1.0](https://pypi.org/project/bwc-bsconf/0.1.0/) 
+### [bwc-bsconf 0.1.0](https://pypi.org/project/bwc-bsconf/0.1.0/) 
 
 This project better define server configurations, repairs and installations in various operating environments.
 
+Developers can use the main features of the tool with this pip package.
+
+Facilitate the installation of web servers, games, email, etc.
 
 #### To Developers
 
 <br>
 
-1. Install the **wheel** module in your python environment
+### Installation
 
-`pip install wheel`
+Install the package with pip:
 
-<br>
+via PyPI:
 
-2. Install **twine** which will be used to upload the tarball
+`pip install bwc-bsconf`
 
-`pip install twine`
+or via GitHub
 
-<br>
-
-3. Now compile the library setup of bsconf module
-
-`python .\setup.py sdist bdist_wheel`
-
-...
+`pip install git+https://github.com/BarcaWebCloud/bsconf-py.git`
 
 <br>
 
-4. Publish or update package in Pip Manager
+Now Create a Python file to start using the **bwc-bsconf** package in your project. In the example below, the file named `main.py` was specified to run the bscan module. Add the following content in the main file.
+
+`main.py`
+
+```py
+import importlib
+
+bwc_bscan = importlib.import_module("bwc-bscan")
+init = bwc_bscan.bscan
+
+init()
+```
+
+<br>
+
+Run the main program
 
 ```
-python3 -m twine upload dist/*
+python3 main.py*
+```
+<br>
+
+Will display on your screen something like this:
+
+```
+Welcome to BSconf
 ```
