@@ -24,15 +24,15 @@ or via GitHub
 
 <br>
 
-Now Create a Python file to start using the **bwc-bsconf** package in your project. In the example below, the file named `main.py` was specified to run the bscan module. Add the following content in the main file.
+Now Create a Python file to start using the **bwc-bsconf** package in your project. In the example below, the file named `main.py` was specified to run the bsconf module. Add the following content in the main file.
 
 `main.py`
 
 ```py
 import importlib
 
-bwc_bscan = importlib.import_module("bwc-bscan")
-init = bwc_bscan.bscan
+bwc_bsconf = importlib.import_module("bwc-bsconf")
+init = bwc_bsconf.bsconf
 
 init()
 ```
